@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-zinc-50">
+    <header class="py-4">
+      <div
+        class="flex px-10 py-2 items-center justify-between max-w-7xl mx-auto"
+      >
+        <nav>
+          <ul class="flex gap-12 flex-wrap items-center">
+            <li class="cursor-pointer px-4">
+              <img src="images/codepay..png" alt="Logo" />
+            </li>
+            <li class="cursor-pointer px-2 text-[#4A5568] font-semibold">
+              Inicio
+            </li>
+            <li class="cursor-pointer px-2 text-[#4A5568] font-semibold">
+              Comprar
+            </li>
+            <li class="cursor-pointer px-2 text-[#4A5568] font-semibold">
+              Contato
+            </li>
+            <li class="cursor-pointer px-2 text-[#4A5568] font-semibold">
+              Ajuda
+            </li>
+          </ul>
+        </nav>
+
+        <div>
+          <ul class="flex items-center gap-8">
+            <li class="flex gap-2 text-[#4A5568] font-semibold">
+              Contato
+              <img src="images/CaretDown.png" alt="Seta para baixo" />
+            </li>
+            <li class="flex gap-4 text-[#4A5568] font-semibold">
+              2 Itens
+              <img src="images/ShoppingCart.png" alt="Icone de carrinho" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="h-px bg-slate-300"></div>
+
+    <main class="pt-16">
+      <ul class="flex items-center px-10 py-2 gap-12 max-w-7xl mx-auto">
+        <li class="flex items-center gap-3 text-[#2FBD6A]">
+          <img src="images/user.png" alt="Usuário" />
+          Conta
+        </li>
+        <div class="h-px bg-black px-px w-[20px]"></div>
+        <li class="flex items-center gap-3">
+          <img src="images/package.png" alt="Package" />
+          Envio
+        </li>
+        <div class="h-px bg-black px-px w-[20px]"></div>
+        <li class="flex items-center gap-3">
+          <img src="images/wallet.png" alt="Pay" />
+          Pagamento
+        </li>
+      </ul>
+
+      <div class="grid grid-cols-2 px-10 py-2 gap-28 max-w-7xl mx-auto">
+        <div>
+          <h2 class="font-semibold text[#2D3748] my-6">Detalhes da Conta</h2>
+          <form class="flex flex-col gap-4">
+            <div>
+              <label class="block mb-3 text-[#718096]" for="email">Email</label>
+              <input
+                class="bg-[#F3EFEF] outline-none px-3 py-2 text-[1rem] w-full rounded-sm"
+                type="email"
+                placeholder="teste@gmail.com"
+                id="email"
+              />
+            </div>
+            <div>
+              <label class="block mb-3 text-[#718096]" for="password"
+                >Senha</label
+              >
+              <input
+                class="bg-[#F3EFEF] outline-none px-3 py-2 text-[1rem] w-full rounded-sm"
+                type="password"
+                placeholder="***********"
+                id="password"
+              />
+            </div>
+            <div class="flex gap-2 items-center justify-end">
+              <button class="text-[#2D3748] px-8 py-3">
+                Registre-se para conta
+              </button>
+              <button class="bg-[#2FBD6A] rounded text-[#F7FAFC] px-8 py-2">
+                Entrar
+              </button>
+            </div>
+
+            <div class="h-px bg-slate-300"></div>
+
+            <div class="flex gap-2 items-center justify-end">
+              <button class="text-[#D1402C] px-8 py-3">Cancelar Pedido</button>
+              <button class="bg-[#2FBD6A] rounded text-[#F7FAFC] px-8 py-2">
+                Continuar Comprando
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <div>
+            <h2 class="font-semibold text[#2D3748] my-6">Resumo do Pedido</h2>
+            <img class="w-full" src="images/unsplash_wMT0oiL5XjA.png" alt="Mouse" />
+          </div>
+          <div>
+            <h2 class="text[#2D3748]">Mouse Gamer Redragon</h2>
+            <div class="flex items-center my-4 justify-between">
+              <h3 class="font-semibold text[#2D3748]">R$ 15,22</h3>
+              <div class="flex gap-2 items-center">
+                <button class="bg-[#F3EFEF] text-[#718096] size-7 rounded">
+                  -
+                </button>
+                2
+                <button class="bg-[#F3EFEF] text-[#718096] size-7 rounded">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="flex gap-4">
+            <input
+              class="bg-[#F3EFEF] outline-none px-3 py-2 text-[1rem] w-full rounded-sm"
+              type="text"
+              placeholder="Cupom de desconto"
+            />
+            <button
+              class="border-2 border-[#2FBD6A] text-green-600 px-4 py-1 rounded-sm"
+            >
+              Aplicar
+            </button>
+          </form>
+
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+              <p class="text-[1.125rem]">Taxa</p>
+              <span>R$3,45</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="text-[1.125rem]">Envio</p>
+              <span class="text-[#2FBD6A]">Grátis</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="font-bold text-[1.25rem]">Total</p>
+              <span class="font-bold text-[1.25rem]">R$3,45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
